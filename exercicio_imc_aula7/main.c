@@ -8,19 +8,17 @@ int main()
 
     printf("Digite seu sexo com as siglas M e F: ");
     scanf("%c", &sexo);
+    printf("Digite sua altura em metros: ");
+    scanf("%lf", &altura);
 
     if(sexo == 'M' || sexo == 'm') {
-        printf("Digite sua altura em metros: ");
-        scanf("%lf", &altura);
         peso_ideal = (72.7 * altura) - 58;
         printf("Seu peso ideal eh de: %.02lf", peso_ideal);
     } else if(sexo == 'F' || sexo == 'f') {
-        printf("Digite sua altura em metros: ");
-        scanf("%lf", &altura);
         peso_ideal = (62.1 * altura) - 44.7;
         printf("Seu peso ideal eh de: %0.02lf", peso_ideal);
     } else {
-        printf("Não foi possivel identificar o seu sexo!");
+        printf("NÃ£o foi possivel identificar o seu sexo!");
     }
 
 
