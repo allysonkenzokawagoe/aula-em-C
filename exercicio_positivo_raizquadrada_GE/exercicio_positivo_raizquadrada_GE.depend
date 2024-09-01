@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1725228001 source:c:\users\t-gamer\onedrive\Área de trabalho\c\exercicio_positivo_raizquadrada_ge\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
