@@ -3,26 +3,20 @@
 
 int main()
 {
-    int num = 0, i = 0, media = 0;
 
-    if(num >= 0) {
-        printf("Digite um numero inteiro: ");
+    int num, media = 0, i = 0;
+
+    do {
+        printf("Digite um numero inteiro: ", num);
         scanf("%d", &num);
-        media = num;
-        while(num > 0) {
-            printf("Digite um numero inteiro: ");
-            scanf("%d", &num);
-            media += num;
-            i++;
-        }
-        if (num == 0) {
-            media = media / i ;
-            printf("A media dos numeros eh de: %d", media);
-        }
-    } else {
-        printf("Digite um numero inteiro maior que zero!");
-    }
+        media += num;
+        i++;
+    } while(num > 0);
 
+    if(num == 0) {
+        media = media / (i - 1);
+        printf("A media dos numeros eh de: %d", media);
+    }
 
     return 0;
 }
