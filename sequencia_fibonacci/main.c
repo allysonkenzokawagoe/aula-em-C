@@ -1,27 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 int main()
 {
     int fn1 = 0, fn2 = 1, fn = 0, num;
-    bool passou = true;
 
     printf("Digite um numero inteiro: ");
     scanf("%d", &num);
 
-    if(passou = true) {
-        fn = fn1 + fn2;
-        passou = false;
-    }
-
     while(fn <= num) {
-        printf("%d\t", fn);
+        if(fn1 > 0) {
+            printf("%d\t", fn1);
+        }
 
         fn = fn1 + fn2;
 
-        fn2 = fn1;
-        fn1 = fn;
+        fn1 = fn2;
+        fn2 = fn;
     }
 
     return 0;
