@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <stdbool.h>
 
 int main()
 {
-    int num, fn, fn1 = 0, fn2 = 1;
+    int fn1 = 0, fn2 = 1, fn = 0, num;
+    bool passou = true;
 
-    printf("Digite um numero inteiro e positivo: ");
+    printf("Digite um numero inteiro: ");
     scanf("%d", &num);
 
-    for(int i = 1; i <= num; i++) {
+    if(passou = true) {
         fn = fn1 + fn2;
+        passou = false;
+    }
 
-        printf("%d, ", fn);
+    while(fn <= num) {
+        printf("%d\t", fn);
+
+        fn = fn1 + fn2;
 
         fn2 = fn1;
         fn1 = fn;
